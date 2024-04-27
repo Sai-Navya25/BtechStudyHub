@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Autocomplete Search</title>
+    <style>
+        /* Add your custom CSS styles here */
+        .autocomplete {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="searchInput" class="autocomplete" placeholder="Search...">
+    <div id="suggestions"></div>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const suggestions = document.getElementById('suggestions');
+
+        // Sample data (replace with your own data source)
+        const searchTerms = ['apple', 'banana', 'cherry', 'grape', 'orange'];
+
+        searchInput.addEventListener('input', function () {
+            const query = searchInput.value.toLowerCase();
+            const filteredTerms = searchTerms.filter(term => term.toLowerCase().includes(query));
+
+            suggestions.innerHTML = '';
+            filteredTerms.forEach(term => {
+                const suggestion = document.createElement('div');
+                suggestion.textContent = term;
+                suggestion.classList.add('autocomplete-item');
+                suggestion.addEventListener('click', function () {
+                    searchInput.value = term;
+                    suggestions.innerHTML = '';
+                });
+                suggestions.appendChild(suggestion);
+            });
+        });
+    </script>
+</body>
+</html>

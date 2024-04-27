@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="collaboration.css">
+    <link rel="stylesheet" href="livechat.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="icon" href="icon.jpg">
+    <link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'/>
+    <!-- <script src="collaboration.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" >
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            
+            <span><img class="logo-img" src="logo.png" alt=""></span>
+               
+             
+             <ul>
+                 <!-- <span><a class="login-btn" href="loginpage.html" target="_blank"><button>Login</button></a></span> -->
+                 <li><a class="a1" href="index.html">Home <span></span></a></li>
+                 <li><a class="a1" href="about.html">About <span></span></a></li>
+                 <li><a class="a1"  href="contact.html">Contact <span></span></a></li>
+                 <li><a class="a1" href="services.html">Features<span></span></a></li>
+                 
+                 <li>
+                     <div class="box">
+                         <input type="search" name="" id="" placeholder="Search...">
+                         <a href="#">
+                             <i class="fas fa-search"></i>
+                         </a>
+                     </div>
+                 </li>
+             </ul>
+              
+         </div>
+         <div class="sidebar">
+            <div class="sidediv">
+                <h1 class="sidehead">Enhancing Collaboration with Live Chat</h1>
+                <ul id="chatuses">
+                    <li><h3><i id="list" class="fa-solid fa-arrow-trend-up"></i>Instant Connectivity:</h3><span id="sidemat">Connect with peers in real-time to discuss study materials, exchange ideas, and provide support.</span></li>
+                    <li><h3><i id="list" class="fa-solid fa-arrow-trend-up"></i>Efficient Group Collaboration:</h3><span id="sidemat">Form study groups, share resources, and solve problems together, enhancing learning outcomes through collaborative efforts.</span></li>
+                    <li><h3><i id="list" class="fa-solid fa-arrow-trend-up"></i>Accessible Learning:</h3><span id="sidemat">Access the chat platform 24/7 for asynchronous communication, enabling flexible study sessions and accommodating diverse schedules.</span></li>
+                    <li><h3><i id="list" class="fa-solid fa-arrow-trend-up"></i>Interactive Support:</h3><span id="sidemat">Receive feedback, motivation, and study tips from peers, fostering a supportive learning community conducive to academic success.</span></li>
+                </ul>
+            </div>
+         </div>
+         <div class="thumbnail">
+            <div id="livechat">
+            <div id="chatmain">
+                <h1 id="heading">LIVE CHAT</h1>
+                <div id="name-input-container">
+                  <h2 id="joinhead">Welcome to the Group Chat Room!</h2>
+                  <input type="text" id="name-input" placeholder="Enter your name..."><br>
+                  <button id="join-button">Join Chat</button>
+                  <!-- <div class="animeboy">
+                    <img class="animeimg" src="anime1.gif" alt="">
+                </div> -->
+                </div>
+              
+                <div id="chat-room" style="display: none;">
+                  <div id="chat-display"></div>
+                  <div id="chat-input">
+                      <input type="text" id="message-input" placeholder="Type your message...">
+                      <button id="send-button"><i class="fa-solid fa-paper-plane"></i></button><br>
+                      <!-- <input type="file" id="file-input" accept="image/*,.pdf,.doc,.docx" /> -->
+                      <button id="leave-button">Leave</button>
+              
+                  </div>
+                  
+              </div>
+            </div>
+              </div>
+         </div>
+    </div>
+   
+   
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script> -->
+    <script src="livechat.js"></script>
+</body>
+</html>

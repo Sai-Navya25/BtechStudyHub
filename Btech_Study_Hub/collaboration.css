@@ -1,0 +1,134 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    justify-content: center;
+    /* display: flex; */
+}
+
+
+
+body{
+    /* background: linear-gradient(to bottom,#06142e,#1b3358,#473e66,#bd83b8,#f5d7db,#f1916d); */
+    /* background: linear-gradient(to bottom,#1d1a39,#451952,#662549,#ae445a,#f39f5a,#e8bcb9); */
+    background-color: #010e2e;
+    overflow: hidden;
+
+    /* background: #010e2e; */
+}
+.main
+{
+    height: 920px;
+    width: 100%;
+    position: absolute;
+/* background-color: red; */
+}
+
+
+
+.sidebar
+{
+  height: 920px;
+  background-color: #010e2e;
+  width: 25%;
+  float: left;
+  justify-content: center;
+  display: flex;
+  
+  
+}
+.sidediv
+{
+  height: 700px;
+  width: 95%;
+  text-align: center;
+  background: linear-gradient(144deg, rgba(126,39,156,1) 0%, rgba(49,39,157,1) 49%);
+  margin: 20px 0px 0px 0px;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.sidehead
+{
+  text-align: center;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    padding:46px 0px 0px 10px;
+    font-family: arial;
+}
+#chatuses 
+{
+  font-family: arial;
+  /* line-height: 40px; */
+  text-align: left;
+  font-size: 18px;
+  padding:  35px 0px 50px 50px;
+  list-style-type: none;
+  /* border: 1px solid black; */
+
+}
+#sidemat
+{
+  font-family: arial;
+  line-height: 29px;
+  text-align: left;
+  padding:0px 100px 0px 20px ;
+  height: 2px;
+  width: 100px;
+  
+  /* margin: 0px 0px 0px 20px; */
+  font-size: 16.5px;
+  /* list-style-type:armenian; */
+  /* border: 1px solid black; */
+  color:#ccc ;
+}
+#list
+{
+  color: white;
+  padding-right: 12px;
+  background-color: #f73b67;
+  text-align: center;
+  justify-content: center;
+  /* display: flex; */
+  width: 20px;
+  padding: 0px 9px 0px 3px;
+  margin: 0px 10px 0px 0px;
+}
+.thumbnail
+{
+  height: 920px;
+  width: 75%;
+  background-color: #010e2e;
+  float: right;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#livechat{
+    /* height: 600px; */
+    /* text-align: center; */
+    width: 75%;
+    margin: -190px 0px 0px 0px;
+    background-color: transparent;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 30px;
+}
+
+.animeboy
+{
+    height: 100px;
+    width: 200px;
+    margin: -295px 0px 0px 20px;
+}
+.animeimg
+{
+    height: 400px;
+    width: 700px;
+}
+
+
+

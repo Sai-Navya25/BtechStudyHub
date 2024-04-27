@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #010e2e; 
+    color: white;
+}
+body, input,textarea, a{
+    font-family: 'Roboto', sans-serif;
+}
+.main
+{
+    height: 920px;
+    /* background-color: red; */
+}
+.navbar
+{
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.navbar li
+{
+    display: inline-block;
+    
+}
+.navbar ul
+{
+    float: right;
+    /* text-decoration: none; */
+    margin: 50px 90px 0px ;
+}
+.box
+{
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.box:hover input{
+    width: 300px;
+}
+.box input{
+    width: 0;
+    height: 30px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background-color: transparent;
+}
+.box a .fas
+{
+    color: #1daf;
+    font-size: 18px;
+}
+input::placeholder
+{
+    font-size: 18px;
+    color: #2c3e50;
+}
+.navbar .a1{
+    /* position: relative; */
+    color: white;
+    /* font-size: 1.1em; */
+    padding: 10px 30px;
+    /* background-color: red; */
+    text-decoration: none;
+    font-size: 20px;
+    transition: .5s;
+}
+.navbar .a1:hover
+{
+    color: orange;
+    border-radius: 15px;
+    /* background: linear-gradient(45deg,purple,orange); */
+    border-bottom: 4px solid rgb(255, 166, 0);
+}
+.text-serv
+{
+    height: 330px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-serv h2{
+    color: white;
+    font-size: 35px;
+}
+.flex-container
+{
+    width: 100%;
+    height: 350px;
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin: 20px; */
+}
+.sec1
+{
+    /* display: flex; */
+    background: linear-gradient(45deg,purple,orange);
+    text-decoration: none;
+    height: 200px;
+    width: 200px;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 180px;
+    /* padding: 70px 0px 0px 20px; */
+    border-radius: 60px 7px 60px 7px;
+    margin: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: .5s;
+}
+.sec1 a{
+    text-decoration: none;
+    color: white;
+}
+.sec1:hover
+{
+    transform: scale(1.3);
+}
+.sec1.videos:hover
+{
+    background-image: url('videoimage.jpg');
+    font-size: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.sec1.mcq:hover
+{
+    background-image: url('mcq2.jpg');
+    font-size: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.sec1.textbooks:hover
+{
+    background-image: url('textbook.jpg');
+    font-size: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.sec1.skill:hover
+{
+    background-image: url('skill.png');
+    font-size: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.sec1.coll:hover
+{
+    background-image: url('collab.jpg');
+    font-size: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.cpright
+{
+    height: 71px;
+    width: 100%;
+    /* background: linear-gradient(to left,black,grey); */
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    /* text-align: right; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+.cpright a{
+    margin: 0px 30px 0px 0px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cpright a:hover
+{
+    color: rgba(87, 85, 85,0.33);
+}
+.logo-img
+{
+    margin: -90px 40px;
+    /* background-color: ; */
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color:#010e2e ; 
+}
+body, input,textarea, a{
+    font-family: 'Roboto', sans-serif;
+}
+.main   
+{
+    height: 920px;
+    /* background-color: red; */
+}
+.navbar
+{
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.navbar li
+{
+    display: inline-block;
+    
+}
+.navbar ul
+{
+    float: right;
+    /* text-decoration: none; */
+    margin: 50px 90px 0px ;
+}
+.box
+{
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.box:hover input{
+    width: 300px;
+}
+.box input{
+    width: 0;
+    height: 30px;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background-color: transparent;
+}
+.box a .fas
+{
+    color: #1daf;
+    font-size: 18px;
+}
+input::placeholder
+{
+    font-size: 18px;
+    color: #2c3e50;
+}
+.navbar .a1{
+    /* position: relative; */
+    color: white;
+    /* font-size: 1.1em; */
+    padding: 10px 30px;
+    /* background-color: red; */
+    text-decoration: none;
+    font-size: 20px;
+    transition: .5s;
+}
+.navbar .a1:hover
+{
+    color: orange;
+    border-radius: 15px;
+    /* background: linear-gradient(45deg,purple,orange); */
+    border-bottom: 4px solid rgb(255, 166, 0);
+}
+.cpright
+{
+    height: 71px;
+    width: 100%;
+    /* background: linear-gradient(to left,black,grey); */
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    /* text-align: right; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+.cpright a{
+    margin: 0px 30px 0px 0px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cpright a:hover
+{
+    color: rgb(87, 85, 85);
+}
+.logo-img
+{
+    margin: -90px 40px;
+    /* background-color: ; */
+}
+.section{
+width: 100%;
+min-height: 80vh;
+padding: 100px;
+/* background-color: #ddd; */
+} I
+.container {
+width: 80%;
+display: block;
+margin: auto;
+padding-top: 100px;
+}
+.content-section
+{
+    float: left;
+    width: 55%;
+}
+.image-section
+{
+    float: right;
+    width: 40%;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.content-section title
+{
+  text-transform: uppercase;
+  font-size: 28px;
+}
+.content-section .content h3
+{
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 21px;
+}
+.content-section .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.content-section .content .button
+{
+    margin-top: 30px;
+}
+.content-section .content .button a{
+    background-color: #3d3d3d;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+
+}
+.content-section .content .button a:hover
+{
+    background-color: #a52a2a;
+    color: #fff;
+}
+.content-section .social
+{
+    margin: 40px;
+}
+.content-section .social i{
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0px 20px 0px 0px;
+}
+.content-section .social i:hover{
+    color: #3d3d3d;
+}
+@media screen and(max-width: 768px)
+{
+    .container {
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section
+{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.image-section
+{
+    float: none;
+    width: 100%;
+}
+.image-section img
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.content-section .title
+{
+    text-align: center;
+    font-size: 19px;
+}
+.content-section .content .button
+{
+    text-align: center;
+
+}
+.content-section .content .button a
+{
+    padding: 9px 30px;
+}
+.content-section .social
+{
+    text-align: center;
+}
+}
+.aboutbody
+{
+    background-color: #010e2e;
+    height: 770px;
+    width: 100%;
+    display: flex;
+}
+
+.aboutback
+{
+    background-color: white;
+    height:670px;
+    width: 1400px;
+    margin: 50px 0px 0px 250px;
+    border-radius: 30px;
+    display: flex;
+    /* align-items: center; */
+}
+
+.aboutimg
+{
+    height: 350px;
+    width: 300px;
+    border-radius: 30px;
+    margin: 40px 0px 0px 1053px;
+
+}
+
+.abouthead
+{
+    font-size: 40px;
+    margin: 30px 0px 0px -1300px;
+    color: #F44770;
+
+}
+
+.aboutpara
+{   margin: 120px 0px 0px -170px;
+    font-size: 18px;
+    height: 400px;
+    width: 850px;
+    color: rgb(98, 9, 128);
+    /* border: rgb(163, 159, 159) solid 5px; */
+}

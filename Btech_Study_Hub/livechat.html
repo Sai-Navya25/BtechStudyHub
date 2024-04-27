@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group Chat Room</title>
+  <link rel="stylesheet" href="livechat.css">
+</head>
+<body>
+  <div id="chatmain">
+    <h1 id="heading">LIVE CHAT</h1>
+    <div id="name-input-container">
+      <h2 id="joinhead">Welcome to the Group Chat Room!</h2>
+      <input type="text" id="name-input" placeholder="Enter your name..."><br>
+      <button id="join-button">Join Chat</button>
+      <!-- <div class="animeboy">
+        <img class="animeimg" src="anime1.gif" alt="">
+    </div> -->
+    </div>
+  
+    <div id="chat-room" style="display: none;">
+      <div id="chat-display"></div>
+      <div id="chat-input">
+          <input type="text" id="message-input" placeholder="Type your message...">
+          <button id="send-button"><i class="fa-solid fa-paper-plane"></i></button><br>
+          <!-- <input type="file" id="file-input" accept="image/*,.pdf,.doc,.docx" /> -->
+          <button id="leave-button">Leave</button>
+  
+      </div>
+      
+  </div>
+</div>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script> -->
+  <script src="chat.js"></script>
+</body>
+</html>

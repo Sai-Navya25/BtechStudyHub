@@ -1,0 +1,297 @@
+/* Integrated CSS Styles */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CSS styles */
+body {
+    font-family: Arial, sans-serif;
+
+    /* background-color: #f5f5f5; */
+    /* margin: 0;
+    padding: 0; */
+}
+
+.wrapperreview {
+    max-width: 310px;
+    max-height: 530px;
+    margin: 2px 0px 0px 18px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 30px 1px #F44770;
+}
+.heading
+{
+    text-align: center;
+    margin:-9px 0px 5px 0px;
+    float: start;
+    color: #F44770;
+}
+.scrollsec
+{
+    overflow-y: scroll  ;
+
+    max-height: 200px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group textarea {
+    width: 85%;
+    padding: 2px;
+    /* margin-right: -100px; */
+    border: 1px solid #c9c6c6;
+    border-radius: 5px;
+    font-size: 16px;
+    box-decoration:none;
+    
+    resize: none;
+    padding: 0px 30px;
+  /* margin: 14px 12px; */
+  border-radius: 5px;
+  box-shadow: inset 3px 3px 3px rgb(210, 137, 235), inset -8px -8px 8px #ffffff;
+}
+.input-group textarea
+{
+    height: 80px;
+    padding-top: 6px;
+    /* color: black; */
+}
+.input-group input[type="text"]
+{   font-size: 16px;
+    height: 25px;
+    /* align-items: center; */
+    padding-top: 2px;
+    /* color: black; */
+}
+/* .rating {
+    margin-bottom: 0px;
+    padding: 0px;
+
+
+} */
+.rating {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.rating label {
+    margin-right: 10px;
+}
+
+.rating .stars {
+    display: inline-block;
+    /* background-color: gold; */
+}
+/* .input-group-rating 
+{
+    display: flex;
+    float: right;
+}
+.input-group-rating i
+{
+    margin: 0px 0px 0px 0px;
+    /* display: flex; */
+    /* text-align: right;
+    float: right;
+} */ 
+.rating .star {
+    color: black;
+    cursor: pointer;
+}
+.rating .star.selected,
+.rating .star:hover {
+    color:#f01447;
+}
+
+
+.review-section {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    /* overflow-y: auto; */
+    overflow: auto;
+    max-height: 200px; 
+    margin: -10px 0px 0px 0px;
+    padding-right: -40px;
+   max-width: 240px;
+   /* display: flex; */
+
+   flex-direction: column;
+   align-items: center;
+   /* scrollbar-width: 5px; */
+}
+
+.review-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* overflow-x: auto; */
+}
+
+.review-list li {
+    margin-bottom: 10px;
+}
+/* CSS for customer review section */
+/* .review-section { */
+    /* Add flexbox to make reviews flexible */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/* Style for each review item */
+/* .review-item {
+    /* Apply a maximum width to prevent overflow */
+    /* max-width: 400px; Adjust the maximum width as needed */
+    /* padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-x: auto;  */ 
+    /* Add horizontal scrollbar when content exceeds width */
+/*  */
+/* Optional: Hide vertical scrollbar
+.review-item::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ensure content wraps within each review item */
+/* .review-item p { */
+    /* Allow text to wrap */
+    /* word-wrap: break-word; */
+    /* Optional: Ensure long words break instead of overflowing */
+    /* overflow-wrap: break-word; */
+/* } */
+ /* CSS for customer review section */
+/* .review-section { */
+    /* Add flexbox to make reviews flexible */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+/* Style for the review container */
+.review-container {
+    /* Apply a maximum width to prevent overflow */
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin-bottom: 10px;
+    overflow-x: auto; /* Add horizontal scrollbar when content exceeds width */
+}
+
+/* Style for each review item */
+.review-item {
+    /* Ensure content wraps within each review item */
+    white-space: nowrap; /* Ensure review items don't wrap */
+    display: inline-block; /* Display review items inline */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Add margin between review items */
+}
+
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    /* height: 20px; */
+    border-radius: 25px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #c4c3c3; 
+    /* height: 9px; */
+    border-radius: 25px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #f7597e; 
+    /* width:90px;/ */
+    
+    border-radius: 25px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #f0325e; 
+    /* scale:1.02; */
+
+}
+
+#submitbtn,#cancelbtn{
+    background: linear-gradient(145deg, white 2%,rgba(126,39,156,1)15%,#e75376 20%, rgb(58, 47, 175) 49%,white 99%);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    margin:20px 0px 0px 0px;
+    font-family: arial;
+}
+#cancelbtn
+{
+    margin-left: 50px;
+    padding: 3px 10px;
+}
+#submitbtn
+{
+    margin-left: 34px;
+    padding: 3px 10px;
+}
+
+#submitbtn:hover,#cancelbtn:hover
+{
+    scale:1.05
+}
+
+
+
+
+
+*::-webkit-scrollbar-track-x {
+    background: #c4c3c3; 
+    scrollbar-width: 2px;
+   
+    height: 2px;
+    /* border-radius: 25px; */
+
+}
+  
+  /* Style the scrollbar handle */
+  *::-webkit-scrollbar-thumb-x {
+    background: #f7597e; 
+    height:2px;
+    vertical-align: 2px;
+   
+    /* margin-top: ; */
+    
+    /* border-radius: 25px; */
+  }
+  
+  /* Handle on hover */
+  *::-webkit-scrollbar-thumb-x:hover {
+    background: #f0325e; 
+
+  }

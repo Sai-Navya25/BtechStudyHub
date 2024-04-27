@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BtechStudyHub | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="bshlogo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            overflow: hidden;
+        }
+
+        #video-content {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+        #animecard
+        {
+            height: 100px;
+        }
+        #videogif
+        {
+            height: 700px;
+            width: 1900px;
+            margin: -500px 140px;
+            mix-blend-mode: multiply;
+        }
+    </style>
+</head>
+<body>
+    <div id="preloader"></div>
+    <video id="video-background" autoplay muted loop>
+        <source src="bgvid.mp4" type="video/mp4">
+    </video>
+    <div class="main">
+        <div class="navbar">
+            <span><img class="logo-img" src="logo.png" alt=""></span>
+            <ul class="navsidebar">
+                <li onclick=HideSidebar()><a href="#"><i id="selbar" class="fa-solid fa-xmark"></i></a></li>
+                <li><a class="a2"  href="index.html">Home <span></span></a></li>
+                <li><a class="a2" href="about.html">About <span></span></a></li>
+                <li><a class="a2" href="contact.html">Contact <span></span></a></li>
+                <li><a class="a2"  href="services.html">Features<span></span></a></li>
+                <li>
+                    <div class="box1">
+                        <input type="search1" name="" id="search" placeholder="Search..." oninput="suggest()">
+                        <datalist id="suggestions"></datalist>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <span><a class="login-btn" href="loginpage.html" target="_blank"><button>Login</button></a></span>
+                <li><a class="a1" href="index.html">Home <span></span></a></li>
+                <li><a class="a1" href="about.html">About <span></span></a></li>
+                <li><a class="a1"  href="contact.html">Contact <span></span></a></li>
+                <li><a class="a1" href="services.html">Features<span></span></a></li>
+                <li>
+                    <div class="box">
+                        <input type="search" name="" id="searchDesktop" placeholder="Search..." oninput="suggestDesktop()">
+                        <a href="#">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="menu" onclick="showSidebar()"><a href="#"><i id="selbar" class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </div>
+        <div class="text">
+            <button class="btn">Welcome To Btech Study Hub</button>
+        </div>
+    </div>
+    <div class="cpright">
+        <a href="#">© Copyright 2024 - All Rights Reserved by Btech Study Hub</a> 
+     </div>
+     <script>
+        function showSidebar()
+        {
+            const Sidebar= document.querySelector('.navsidebar');
+            Sidebar.style.display='flex';
+        }
+        function HideSidebar()
+        {
+            const Sidebar= document.querySelector('.navsidebar');
+            Sidebar.style.display='none';
+        }
+
+        const courseCodes = [
+            "MCQs", "Tutorials", "Skill Development", "Collaboration", "Textbooks"
+        ];
+
+        function suggest() {
+            const inputValue = document.getElementById('search').value.toLowerCase();
+            const suggestions = courseCodes.filter(option => option.toLowerCase().includes(inputValue));
+            const datalist = document.getElementById('suggestions');
+            datalist.innerHTML = '';
+            suggestions.forEach(suggestion => {
+                const option = document.createElement('option');
+                option.value = suggestion;
+                datalist.appendChild(option);
+            });
+        }
+
+        function redirectToPage(query) {
+            switch (query.toLowerCase()) {
+                case "mcqs":
+                    window.location.href = "mcq.html";
+                    break;
+                case "tutorials":
+                    window.location.href = "tutorialmenu.html";
+                    break;
+                case "skill development":
+                    window.location.href = "development.html";
+                    break;
+                case "collaboration":
+                    window.location.href = "collaboration.html";
+                    break;
+                case "textbooks":
+                    window.location.href = "textbook.html";
+                    break;
+                default:
+                    // No action needed for unmatched queries
+                    break;
+            }
+        }
+
+        function suggestDesktop() {
+            const inputValue = document.getElementById('searchDesktop').value.toLowerCase();
+            redirectToPage(inputValue);
+        }
+
+        // Handling form submission
+        document.querySelector('.box a').addEventListener('click', function(event) {
+            event.preventDefault(); // Preventing the default form submission
+            const inputValue = document.getElementById('searchDesktop').value.toLowerCase();
+            redirectToPage(inputValue);
+        });
+
+     </script>
+
+     <script>
+        var loader=document.getElementById('preloader');
+        window.addEventListener('load',function()
+        {
+            loader.style.display = 'none';
+        });
+     </script>
+</body>
+</html>
